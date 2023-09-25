@@ -34,13 +34,7 @@ Uptime:    === ${uptime}
 CPU:       === ${cpu}
 Memory:    === ${ram}
 Storage:   === ${storage}"
-                 )
-    (conkeww-pane :title ""
-                    :color red
-                    :spacing 15
-                    :key-css "font-weight: 700; color: ==color=="
-                    :text "  === ${cava}  "
-    )
+                 ) 
     (conkeww-pane :title "KEYBINDS"
                   :color blue
                   :spacing 15

@@ -37,11 +37,13 @@ alias nodeUpdate="nvm install node && nvm use node && npm i -g yarn pnpm"
 thefuck --alias | source
 nvm use node
 
-# ruby
-fish_add_path "/home/tuckerj/.local/share/gem/ruby/3.0.0/bin"
 # bun
 set -Ux BUN_INSTALL "~/.bun"
 fish_add_path "~/.bun/bin"
+# flyctl
+set -Ux FLYCTL_INSTALL "~/.fly"
+fish_add_path "~/.fly/bin/"
+alias fly="~/.fly/bin/flyctl"
 # Theme
 fish_config theme choose "Rosé Pine Moon"
 
@@ -52,3 +54,4 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 fish_add_path /home/tuckerj/.spicetify
+status --is-interactive; and rbenv init - fish | source
