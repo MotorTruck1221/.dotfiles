@@ -1,5 +1,5 @@
 [global]
-frame_color = "#384b55"
+frame_color = "#ea9a97"
 separator_color= frame
 follow = mouse
 indicate_hidden = yes
@@ -33,14 +33,14 @@ corner_radius = 10
 timeout = 5
 
 [urgency_low]
-background = "#1e2326"
-foreground = "#4f5b58"
+background = "#2a273f"
+foreground = "#e0def4"
 
 [urgency_normal]
-background = "#272e33"
-foreground = "#d3c6aa"
+background = "#232136"
+foreground = "#e0def4"
 
 [urgency_critical]
-background = "#4c3743"
-foreground = "#d3c6aa"
-frame_color = "#e67e80"
+background = "#3e8fb0"
+foreground = "#e0def4"
+frame_color = "#c4a7e7"

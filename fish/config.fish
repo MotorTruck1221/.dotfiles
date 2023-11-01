@@ -2,7 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 export (cat ~/.config/fish/environment/env.txt |xargs -L 1)
-pfetch
+#pfetch
+neofetch
 set fish_greeting ""
 alias cod="code . && exit"
 alias lockscreenu="~/.config/.scripts/lockscreenwallpaper.sh"
