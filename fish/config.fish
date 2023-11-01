@@ -23,7 +23,7 @@ alias vmst='~/.scripts/KVMinstall-master/start_and_stop/vm_stop.sh'
 alias vml='~/.scripts/KVMinstall-master/view/vm_list.sh'
 alias vmh='~/.scripts/KVMinstall-master/list.sh'
 alias fucking='sudo'
-alias update='sudo pacman -Syu && yay -Syu --aur && flatpak upgrade'
+alias update='sudo echo "Unpatching vencord..." && sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)" && sudo pacman -Syu && yay -Syu --aur && flatpak upgrade && sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias remove='sudo pacman -Rcns'
 alias install='sudo pacman -S'
 alias removea='yay -Rcns'
@@ -33,6 +33,7 @@ alias vim="nvim"
 alias cats="python ~/cats/cats.py"
 alias pn="pnpm"
 alias nodeUpdate="nvm install node && nvm use node && npm i -g yarn pnpm"
+alias vinegar="flatpak run io.github.vinegarhq.Vinegar"
 
 thefuck --alias | source
 nvm use node
@@ -55,3 +56,6 @@ end
 # pnpm end
 fish_add_path /home/tuckerj/.spicetify
 status --is-interactive; and rbenv init - fish | source
+
+#Startship
+starship init fish | source
