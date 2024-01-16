@@ -13,9 +13,9 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- use { "catppuccin/nvim", as = "catppuccin" }
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- use { "rose-pine/neovim", as = "rose-pine" }
-  use { "sainnhe/everforest", as = "everforest" }
+  -- use { "sainnhe/everforest", as = "everforest" }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/playground')
   use ('theprimeagen/harpoon')
@@ -25,6 +25,13 @@ return require('packer').startup(function(use)
   use { 'github/copilot.vim' }
   use { 'tpope/vim-dadbod' }
   use { 'vimsence/vimsence' }
+  use {'edluffy/hologram.nvim'}
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons',
+  },
+}
   use {
     "NvChad/nvterm",
     config = function ()

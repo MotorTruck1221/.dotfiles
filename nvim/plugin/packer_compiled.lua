@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?/init.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1696795921/lib/lua/5.1/?.so"
+local package_path_str = "/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?/init.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?.lua;/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/tuckerj/.cache/nvim/packer_hererocks/2.1.1700008891/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -78,6 +78,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  catppuccin = {
+    loaded = true,
+    path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -109,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  everforest = {
-    loaded = true,
-    path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/everforest",
-    url = "https://github.com/sainnhe/everforest"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -123,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["hologram.nvim"] = {
+    loaded = true,
+    path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/hologram.nvim",
+    url = "https://github.com/edluffy/hologram.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -154,13 +159,23 @@ _G.packer_plugins = {
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   nvterm = {
-    config = { "\27LJ\2\nñ\2\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\0\14type_opts\1\0\0\rvertical\1\0\2\16split_ratio\4\0€€€ÿ\3\rlocation\15rightbelow\15horizontal\1\0\2\16split_ratio\4³æÌ™\3³æÌþ\3\rlocation\15rightbelow\nfloat\1\0\0\1\0\6\rrelative\veditor\vborder\vsingle\nwidth\4\0€€€ÿ\3\vheight\4š³æÌ\t™³æþ\3\bcol\4\0€€Àþ\3\brow\4³æÌ™\3³æÌþ\3\nsetup\vnvterm\frequire\0" },
+    config = { "\27LJ\2\nñ\2\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\0\14type_opts\1\0\0\rvertical\1\0\2\16split_ratio\4\0€€€ÿ\3\rlocation\15rightbelow\15horizontal\1\0\2\16split_ratio\4³æÌ™\3³æÌþ\3\rlocation\15rightbelow\nfloat\1\0\0\1\0\6\brow\4³æÌ™\3³æÌþ\3\vborder\vsingle\vheight\4š³æÌ\t™³æþ\3\nwidth\4\0€€€ÿ\3\rrelative\veditor\bcol\4\0€€Àþ\3\nsetup\vnvterm\frequire\0" },
     loaded = true,
     path = "/home/tuckerj/.local/share/nvim/site/pack/packer/start/nvterm",
     url = "https://github.com/NvChad/nvterm"
@@ -215,7 +230,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: nvterm
 time([[Config for nvterm]], true)
-try_loadstring("\27LJ\2\nñ\2\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\0\14type_opts\1\0\0\rvertical\1\0\2\16split_ratio\4\0€€€ÿ\3\rlocation\15rightbelow\15horizontal\1\0\2\16split_ratio\4³æÌ™\3³æÌþ\3\rlocation\15rightbelow\nfloat\1\0\0\1\0\6\rrelative\veditor\vborder\vsingle\nwidth\4\0€€€ÿ\3\vheight\4š³æÌ\t™³æþ\3\bcol\4\0€€Àþ\3\brow\4³æÌ™\3³æÌþ\3\nsetup\vnvterm\frequire\0", "config", "nvterm")
+try_loadstring("\27LJ\2\nñ\2\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\0\14type_opts\1\0\0\rvertical\1\0\2\16split_ratio\4\0€€€ÿ\3\rlocation\15rightbelow\15horizontal\1\0\2\16split_ratio\4³æÌ™\3³æÌþ\3\rlocation\15rightbelow\nfloat\1\0\0\1\0\6\brow\4³æÌ™\3³æÌþ\3\vborder\vsingle\vheight\4š³æÌ\t™³æþ\3\nwidth\4\0€€€ÿ\3\rrelative\veditor\bcol\4\0€€Àþ\3\nsetup\vnvterm\frequire\0", "config", "nvterm")
 time([[Config for nvterm]], false)
 
 _G._packer.inside_compile = false

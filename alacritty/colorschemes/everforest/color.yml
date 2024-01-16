@@ -1,4 +1,5 @@
 colors:
+  #opacity: 0.9
   primary:
     background: "0x1e2326"
     foreground: "0xd3c6aa"
