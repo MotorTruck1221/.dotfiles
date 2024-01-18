@@ -1,0 +1,4 @@
+import = ["/home/tuckerj/.config/alacritty/colorschemes/catppuccin/catppuccin-mocha.toml"]
+
+[env]
+TERM = "xterm-256color"
