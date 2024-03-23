@@ -25,4 +25,5 @@ sudo sed -i "/\[arcolinux_repo_xlarge\]/,/Include/"'s/^#//' /etc/pacman.conf
 # Install packages
 echo "Installing packages..."
 sudo pacman -Syy
+yay -S --noconfirm - < pkglist.txt
 
