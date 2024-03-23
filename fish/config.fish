@@ -35,7 +35,6 @@ alias cats="python ~/cats/cats.py"
 alias pn="pnpm"
 alias nodeUpdate="nvm install node && nvm use node && npm i -g yarn pnpm"
 alias vinegar="flatpak run io.github.vinegarhq.Vinegar"
-alias air="/home/tuckerj/go/bin/air"
 alias dev="zellij"
 
 thefuck --alias | source

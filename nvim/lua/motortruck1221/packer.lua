@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
   }
 
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "gleam-lang/gleam.vim", as = "gleam" }
   -- use { "rose-pine/neovim", as = "rose-pine" }
   -- use { "sainnhe/everforest", as = "everforest" }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
