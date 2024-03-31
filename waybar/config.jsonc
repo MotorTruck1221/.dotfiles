@@ -51,7 +51,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:󰥔  %R   󰃭  %a %d  %b %Y}",
+    "format": "{:%R   󰃭  %a %d  %b %Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "custom/swaync": {
