@@ -30,7 +30,10 @@ require("catppuccin").setup({
         nvimtree = true,
         telescope = true,
         notify = false,
-        mini = false,
+        mini = {
+            enabled = true,
+            indentscope_color = "",
+        },
         harpoon = true,
 --        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
