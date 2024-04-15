@@ -15,4 +15,3 @@ require('mini.map').setup({
   },
 })
 
-MiniMap.open()
