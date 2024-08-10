@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 3 --effect-blur 1x1 --ring-color 85c1dc --key-hl-color e78284 --line-color 00000000 --inside-color 000000 --separator-color 00000000",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -24,7 +24,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "systemctl suspend && swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 3 --effect-blur 1x1 --ring-color 85c1dc --key-hl-color e78284 --line-color 00000000 --inside-color 000000 --separator-color 00000000",
     "text" : "Suspend",
     "keybind" : "u"
 }

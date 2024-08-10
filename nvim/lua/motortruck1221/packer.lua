@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('habamax/vim-godot')
-  use { 'github/copilot.vim' }
+  --use { 'github/copilot.vim' }
   use { 'tpope/vim-dadbod' }
   use { 'vimsence/vimsence' }
   use {'edluffy/hologram.nvim'}
@@ -69,7 +69,7 @@ use({ 'echasnovski/mini.map' })
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {
 	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v1.x',
+	  branch = 'v3.x',
 	  requires = {
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},             -- Required

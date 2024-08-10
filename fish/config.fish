@@ -3,7 +3,7 @@ if status is-interactive
 end
 export (cat ~/.config/fish/environment/env.txt |xargs -L 1)
 #pfetch
-neofetch
+#neofetch
 set fish_greeting ""
 alias cod="code . && exit"
 alias lockscreenu="~/.config/.scripts/lockscreenwallpaper.sh"
@@ -38,7 +38,7 @@ alias vinegar="flatpak run io.github.vinegarhq.Vinegar"
 alias dev="zellij"
 
 thefuck --alias | source
-nvm use node
+nvm use node --silent
 
 # bun
 set -Ux BUN_INSTALL "~/.bun"
@@ -56,7 +56,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-fish_add_path /home/tuckerj/.spicetify
 status --is-interactive; and rbenv init - fish | source
 
 #Startship
