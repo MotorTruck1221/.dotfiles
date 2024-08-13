@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { "catppuccin/nvim", as = "catppuccin" }
+  --use { "catppuccin/nvim", as = "catppuccin" }
+  use { "ellisonleao/gruvbox.nvim", as = "gruvbox" }
   use { "gleam-lang/gleam.vim", as = "gleam" }
   -- use { "rose-pine/neovim", as = "rose-pine" }
   -- use { "sainnhe/everforest", as = "everforest" }

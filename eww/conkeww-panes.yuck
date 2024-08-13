@@ -25,7 +25,7 @@ s/, / /g'`)
        :spacing 10
 
     (conkeww-pane :title "Hyprland"
-                  :color magenta
+                  :color cyan
                   :spacing 69 
                   :value-css "font-weight: 700; color: ==color=="
                   :text 
@@ -36,7 +36,7 @@ Memory:    === ${ram}
 Storage:   === ${storage}"
                  ) 
     (conkeww-pane :title "KEYBINDS"
-                  :color blue
+                  :color green
                   :spacing 15
                   :key-css "font-weight: 700; color: ==color=="
                   :text

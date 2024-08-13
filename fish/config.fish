@@ -1,7 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-export (cat ~/.config/fish/environment/env.txt |xargs -L 1)
 #pfetch
 #neofetch
 set fish_greeting ""
@@ -48,7 +47,8 @@ set -Ux FLYCTL_INSTALL "~/.fly"
 fish_add_path "~/.fly/bin/"
 alias fly="~/.fly/bin/flyctl"
 # Theme
-fish_config theme choose "Rosé Pine Moon"
+theme_gruvbox dark medium
+#fish_config theme choose "them_gruvbox"
 
 # pnpm
 set -gx PNPM_HOME "~/.local/share/pnpm"

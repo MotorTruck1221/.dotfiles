@@ -1,5 +1,5 @@
 [global]
-frame_color = "#d3869b"
+frame_color = "#89B4FA"
 separator_color= frame
 follow = mouse
 indicate_hidden = yes
@@ -31,17 +31,16 @@ title = Dunst
 class = Dunst
 corner_radius = 10
 timeout = 5
-allow_markup = yes
 
 [urgency_low]
-background = "#83a598"
-foreground = "#282828"
+background = "#1E1E2E"
+foreground = "#CDD6F4"
 
 [urgency_normal]
-background = "#282828"
-foreground = "#ebdbb2"
+background = "1E1E2E"
+foreground = "#CDD6F4"
 
 [urgency_critical]
-background = "#cc241d"
-foreground = "#ebdbb2"
-frame_color = "#fb4934"
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"

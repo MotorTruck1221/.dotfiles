@@ -1,6 +1,7 @@
+@import "./gruvbox.css";
 window {
-    color: #cdd6f4;
-    background-color: rgba(30, 30, 46, 0.7);
+    color: @fg;
+    background-color: rgba(40, 40, 40, 0.7);
     font-family: 'FiraCode Nerd Font', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -8,12 +9,12 @@ window {
 
 button {
     margin: 5px;
-    color: #cdd6f4;
-    background-color: #1e1e2e;
+    color: @fg;
+    background-color: transparent;
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: center;
-    border: 5px solid #cba6f7;
+    border: 5px solid @aqua;
     border-radius: 15px;
     box-shadow: none;
     text-shadow: none;
@@ -22,8 +23,8 @@ button {
 }
 
 button:focus, button:active, button:hover {
-    color: #cdd6f4;
-    background-color: #181825;
+    color: @fg;
+    background-color: @bg_h;
     text-shadow: none;
     outline: none;
 }
