@@ -27,7 +27,8 @@ return require('packer').startup(function(use)
   --use { 'github/copilot.vim' }
   use { 'tpope/vim-dadbod' }
   use { 'vimsence/vimsence' }
-  use {'edluffy/hologram.nvim'}
+  use {'edluffy/hologram.nvim' }
+  use { 'lambdalisue/vim-suda' }
   use {
   'nvim-tree/nvim-tree.lua',
   requires = {
