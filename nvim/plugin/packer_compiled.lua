@@ -182,7 +182,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   nvterm = {
-    config = { "\27LJ\2\n¬\3\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\2\14terminals\0\vtoggle\0\14type_opts\1\0\1\14type_opts\0\rvertical\1\0\2\rlocation\15rightbelow\16split_ratio\4\0€€€ÿ\3\15horizontal\1\0\2\rlocation\15rightbelow\16split_ratio\4³æÌ™\3³æÌþ\3\nfloat\1\0\3\nfloat\0\15horizontal\0\rvertical\0\1\0\6\vheight\4š³æÌ\t™³æþ\3\vborder\vsingle\brow\4³æÌ™\3³æÌþ\3\rrelative\veditor\bcol\4\0€€Àþ\3\nwidth\4\0€€€ÿ\3\nsetup\vnvterm\frequire\0" },
+    config = { "\27LJ\2\n¬\3\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\2\14terminals\0\vtoggle\0\14type_opts\1\0\1\14type_opts\0\rvertical\1\0\2\rlocation\15rightbelow\16split_ratio\4\0€€€ÿ\3\15horizontal\1\0\2\rlocation\15rightbelow\16split_ratio\4³æÌ™\3³æÌþ\3\nfloat\1\0\3\rvertical\0\15horizontal\0\nfloat\0\1\0\6\rrelative\veditor\bcol\4\0€€Àþ\3\nwidth\4\0€€€ÿ\3\vheight\4š³æÌ\t™³æþ\3\vborder\vsingle\brow\4³æÌ™\3³æÌþ\3\nsetup\vnvterm\frequire\0" },
     loaded = true,
     path = "/home/motortruck1221/.local/share/nvim/site/pack/packer/start/nvterm",
     url = "https://github.com/NvChad/nvterm"
@@ -236,6 +236,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/motortruck1221/.local/share/nvim/site/pack/packer/start/vimsence",
     url = "https://github.com/vimsence/vimsence"
+  },
+  ["zig.vim"] = {
+    loaded = true,
+    path = "/home/motortruck1221/.local/share/nvim/site/pack/packer/start/zig.vim",
+    url = "https://github.com/ziglang/zig.vim"
   }
 }
 
@@ -246,7 +251,7 @@ try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\
 time([[Setup for markdown-preview.nvim]], false)
 -- Config for: nvterm
 time([[Config for nvterm]], true)
-try_loadstring("\27LJ\2\n¬\3\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\2\14terminals\0\vtoggle\0\14type_opts\1\0\1\14type_opts\0\rvertical\1\0\2\rlocation\15rightbelow\16split_ratio\4\0€€€ÿ\3\15horizontal\1\0\2\rlocation\15rightbelow\16split_ratio\4³æÌ™\3³æÌþ\3\nfloat\1\0\3\nfloat\0\15horizontal\0\rvertical\0\1\0\6\vheight\4š³æÌ\t™³æþ\3\vborder\vsingle\brow\4³æÌ™\3³æÌþ\3\rrelative\veditor\bcol\4\0€€Àþ\3\nwidth\4\0€€€ÿ\3\nsetup\vnvterm\frequire\0", "config", "nvterm")
+try_loadstring("\27LJ\2\n¬\3\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\0025\3\14\0=\3\15\2B\0\2\1K\0\1\0\vtoggle\1\0\1\15horizontal\15<leader>tr\14terminals\1\0\2\14terminals\0\vtoggle\0\14type_opts\1\0\1\14type_opts\0\rvertical\1\0\2\rlocation\15rightbelow\16split_ratio\4\0€€€ÿ\3\15horizontal\1\0\2\rlocation\15rightbelow\16split_ratio\4³æÌ™\3³æÌþ\3\nfloat\1\0\3\rvertical\0\15horizontal\0\nfloat\0\1\0\6\rrelative\veditor\bcol\4\0€€Àþ\3\nwidth\4\0€€€ÿ\3\vheight\4š³æÌ\t™³æþ\3\vborder\vsingle\brow\4³æÌ™\3³æÌþ\3\nsetup\vnvterm\frequire\0", "config", "nvterm")
 time([[Config for nvterm]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]

@@ -5,7 +5,8 @@ lsp.preset('recommended')
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
-      'tsserver'
+      'tsserver',
+      'astro'
   },
   handlers = {
     function(server_name)

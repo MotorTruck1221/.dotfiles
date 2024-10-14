@@ -1,7 +1,7 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-fastfetch --logo arch
+#fastfetch --logo arch
 set fish_greeting ""
 alias cod="code . && exit"
 alias lockscreenu="~/.config/.scripts/lockscreenwallpaper.sh"
