@@ -15,8 +15,8 @@ return require('packer').startup(function(use)
 
   --use { "catppuccin/nvim", as = "catppuccin" }
   use { "ellisonleao/gruvbox.nvim", as = "gruvbox" }
-  use { "gleam-lang/gleam.vim", as = "gleam" }
-  use { "ziglang/zig.vim" }
+  --use { "gleam-lang/gleam.vim", as = "gleam" }
+  --use { "ziglang/zig.vim" }
   -- use { "rose-pine/neovim", as = "rose-pine" }
   -- use { "sainnhe/everforest", as = "everforest" }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -69,7 +69,8 @@ return require('packer').startup(function(use)
 --})
 
 use({ 'echasnovski/mini.map' })
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+use({ 'OXY2DEV/markview.nvim' })
+--use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
