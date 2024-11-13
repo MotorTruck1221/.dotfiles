@@ -34,6 +34,7 @@ alias pn="pnpm"
 alias nodeUpdate="nvm install node && nvm use node && npm i -g yarn pnpm"
 alias vinegar="flatpak run io.github.vinegarhq.Vinegar"
 alias dev="zellij"
+alias zigging="~/.config/fish/scripts/zig.fish"
 
 thefuck --alias | source
 nvm use node --silent
@@ -55,7 +56,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-status --is-interactive; and rbenv init - fish | source
+status --is-interactive; and ~/.rbenv/bin/rbenv init - fish | source
 
 #Startship
 starship init fish | source
