@@ -15,6 +15,9 @@ require('mason-lspconfig').setup({
   },
 })
 
+local lspconfig = require ('lspconfig')
+lspconfig.zls.setup {}
+
 --local cmp = require('cmp')
 --local cpm_select = {behavior = cmp.SelectBehavior.Select}
 --local cmp_mappings = lsp.defaults.cmp_mappings({

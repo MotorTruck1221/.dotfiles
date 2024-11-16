@@ -7,17 +7,18 @@ end
 
 function clean
     echo "Removing all build files"
-    rm -rf ~/llvm-project-19
+    rm -rf ~/Downloads/llvm-project-19
     rm -rf ~/zig
     echo "Done!"
 end
 
 function installLLVM
-    git clone --depth 1 --branch release/19.x https://github.com/llvm/llvm-project ~/llvm-project-19
-    cd ~/llvm-project-19
+    cd ~/Downloads
+    git clone --depth 1 --branch release/19.x https://github.com/llvm/llvm-project llvm-project-19
+    cd llvm-project-19
     git checkout release/19.x
-    mkdir build-release/
-    cd build-release/
+    mkdir build-release
+    cd build-release
     cmake ../llvm \
         -DCMAKE_INSTALL_PREFIX=$HOME/local/llvm19-assert \
         -DCMAKE_BUILD_TYPE=Release \
@@ -27,7 +28,7 @@ function installLLVM
         -DLLVM_ENABLE_LIBEDIT=OFF \
         -DLLVM_ENABLE_ASSERTIONS=ON \
         -DLLVM_PARALLEL_LINK_JOBS=1 \
-        -G ninja
+        -G Ninja
     ninja install
     echo "LLVM Installed!"
     echo "Now, onto building Zig"
